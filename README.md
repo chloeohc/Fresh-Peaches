@@ -1,25 +1,26 @@
-# Fresh Peaches — Sales Forecasting & Analytics
+# Fresh Peaches — Summer Internship Sales Forecasting Project
 
-This repository contains data cleaning, analysis, and time series forecasting work for Fresh Peaches, a direct-to-consumer startup specializing in eco-friendly home care products. The goal of this project is to transform raw 12-month sales data into actionable insights and predictive models to guide inventory and marketing decisions.
+This repository contains my work completed during my **Summer 2025 internship at Fresh Peaches**, a Los Angeles–based startup focused on sustainable personal and home care products. Fresh Peaches sells biodegradable hygiene products and eco-friendly home essentials through direct-to-consumer channels, with a mission to make sustainable living more accessible and affordable.
 
 ## Project Overview
 
-Objectives:
-- Clean and unify historical transaction data across SKUs (≈30+ products, ~7K units distributed)
-- Compute descriptive metrics such as MoM sales growth, AOV, bundle frequency, and top customers by spend
-- Build reproducible forecasting pipelines using Prophet and SARIMA
-- Compare model performance using MAPE, RMSE, and pseudo-R²
-- Visualize results and export key insights for leadership reports
+During my internship, I analyzed 12 months of transaction-level sales data to identify purchasing trends, clean inconsistencies, and develop predictive models for future performance. The primary goal was to **forecast product sales for the remainder of the year** to inform inventory planning and marketing decisions.
+
+Key objectives:
+- Clean and unify sales data across 30+ SKUs
+- Calculate key performance metrics (MoM sales, AOV, product bundle frequency)
+- Build forecasting models using **Facebook Prophet** and **SARIMA**
+- Evaluate model accuracy and provide recommendations for next-quarter planning
 
 ## Methods & Tools
 
 | Task | Approach |
 |:--|:--|
-| Data Cleaning | Pandas & SQL-style deduplication by (customer_id, order_id, title), NULL detection, type casting |
-| Exploratory Analysis | Group-by aggregations, SKU-level MoM/YoY trends, seasonality visualization |
-| Forecasting Models | Prophet (with retail-holiday regressors), SARIMA/SARIMAX, Auto-ARIMA baselines |
+| Data Cleaning | Pandas-based transformations, NULL detection, type correction, duplicate removal |
+| Exploratory Data Analysis | SKU-level aggregation, seasonality plots, and MoM/YoY comparisons |
+| Forecasting Models | Facebook Prophet, SARIMA, Auto-ARIMA baselines |
 | Evaluation Metrics | MAPE, RMSE, pseudo-R² |
-| Visualization | Matplotlib, Seaborn, and Jupyter inline charts |
-| Documentation | Jupyter Notebooks + CSV exports for reproducibility |
+| Visualization | Matplotlib, Seaborn, Prophet plots |
+| Documentation | Jupyter Notebooks for reproducibility and analysis transparency |
 
 ## Repository Structure
